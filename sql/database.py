@@ -7,7 +7,7 @@ import os
 user = os.getenv('DB_MYSQL_USER')
 password = os.getenv('DB_MYSQL_PASS')
 host = os.getenv('DB_HOST')
-port = int(os.getenv('DB_MYSQL_PORT'))
+port = os.getenv('DB_MYSQL_PORT')
 db_name = os.getenv('DB_NAME')
 hostname = f"{host}:{port}"
 
