@@ -1,4 +1,5 @@
 from typing import List
+import uvicorn
 
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.param_functions import Query
@@ -127,3 +128,7 @@ async def get_neighborhoods(page: int = Query(1, description="Number of page"), 
         return neighborhoods
     else:
         raise HTTPException(status_code=404, detail="No record")
+
+if __name__ == "__main__":
+    uvicorn.run("app:app", host='0.0.0.0', port=4557,
+                reload=True, debug=False, workers=3)
