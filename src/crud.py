@@ -3,8 +3,6 @@ from sqlalchemy.orm import Session
 from sqlalchemy.sql.functions import mode
 import paginate_sqlalchemy
 
-from sql.schemas import Neighborhood
-
 from . import models
 
 
