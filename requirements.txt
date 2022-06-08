@@ -21,3 +21,4 @@ SQLAlchemy==1.4.27
 toml==0.10.2
 typing_extensions==4.0.0
 uvicorn==0.15.0
+cryptography==36.0.0
